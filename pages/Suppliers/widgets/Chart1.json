@@ -3,11 +3,11 @@
   "allowScroll": false,
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 77,
+  "bottomRow": 87,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "chartData": {
     "jkvca8imht": {
-      "data": "[\n  {\n    \"x\": \"Product1\",\n    \"y\": 20000\n  },\n  {\n    \"x\": \"Product2\",\n    \"y\": 22000\n  },\n  {\n    \"x\": \"Product3\",\n    \"y\": 32000\n  }\n]",
+      "data": "{{\ngetSuppliers.data.map(row => ({\n  x: row.name,\n  y: Number(row.number_products_supplied || 0)\n}))\n}}",
       "seriesName": "2026"
     }
   },
@@ -76,6 +76,9 @@
     },
     {
       "key": "fontFamily"
+    },
+    {
+      "key": "chartData.jkvca8imht.data"
     }
   ],
   "dynamicTriggerPathList": [],
@@ -85,24 +88,26 @@
   "isVisible": true,
   "key": "thty25vvvf",
   "labelOrientation": "auto",
-  "leftColumn": 0,
+  "leftColumn": 1,
   "minWidth": 450,
   "mobileBottomRow": 89,
   "mobileLeftColumn": 0,
   "mobileRightColumn": 23,
   "mobileTopRow": 57,
   "needsErrorInfo": true,
+  "originalBottomRow": 87,
+  "originalTopRow": 52,
   "parentColumnSpace": 13.53125,
   "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 28,
+  "rightColumn": 29,
   "showDataPointLabel": false,
-  "topRow": 42,
+  "topRow": 52,
   "type": "CHART_WIDGET",
   "version": 1,
-  "widgetId": "7wml0hlzl6",
+  "widgetId": "mt883crpw2",
   "widgetName": "Chart1",
   "xAxisName": "Product Line",
   "yAxisName": "Revenue($)"

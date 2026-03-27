@@ -3,11 +3,11 @@
   "allowScroll": false,
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 77,
+  "bottomRow": 87,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "chartData": {
     "jkvca8imht": {
-      "data": "[\n  {\n    \"x\": \"ABX\",\n    \"y\": 20000\n  },\n  {\n    \"x\": \"LRC\",\n    \"y\": 32000\n  },\n  {\n    \"x\": \"ABD\",\n    \"y\": 28000\n  },\n  {\n    \"x\": \"DUW\",\n    \"y\": 38000\n  }\n]",
+      "data": "{{\ngetSuppliers.data.map(row => ({\n  x: row.name,\n  y: Number(row.revenue || 0)\n}))\n}}",
       "seriesName": "2026"
     }
   },
@@ -76,6 +76,9 @@
     },
     {
       "key": "fontFamily"
+    },
+    {
+      "key": "chartData.jkvca8imht.data"
     }
   ],
   "dynamicTriggerPathList": [],
@@ -92,6 +95,8 @@
   "mobileRightColumn": 53,
   "mobileTopRow": 42,
   "needsErrorInfo": true,
+  "originalBottomRow": 87,
+  "originalTopRow": 52,
   "parentColumnSpace": 13.53125,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -99,10 +104,10 @@
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "showDataPointLabel": false,
-  "topRow": 42,
+  "topRow": 52,
   "type": "CHART_WIDGET",
   "version": 1,
-  "widgetId": "og6zor1ao7",
+  "widgetId": "alrd9rbq61",
   "widgetName": "Chart2",
   "xAxisName": "Supplier",
   "yAxisName": "Revenue($)"
