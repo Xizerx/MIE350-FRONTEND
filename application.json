@@ -26,15 +26,15 @@
       "isDefault": false
     },
     {
-      "id": "Orders",
-      "isDefault": false
-    },
-    {
       "id": "Analytics",
       "isDefault": false
     },
     {
       "id": "Page2",
+      "isDefault": false
+    },
+    {
+      "id": "Order",
       "isDefault": false
     }
   ],
